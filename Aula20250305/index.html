@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
-    
+    <script defer src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <script defer src="script.js"></script>
+
+    <div class="fundo">
+    
     <form method="post" id="formulario">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
 
-        <Br></Br>
+        <div class="grupo">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+        </div>
 
-        <label for="idade">Idade: </label>
-        <input type="number" name="idade" id="Idade" placeholder="Insira sua idade" min="0" max="100" required >
-        
-        <Br></Br>        
-        
-        <label for="nascimento">Nascimento: </label>
-        <input type="date" name="nascimento" id="nascimento" placeholder="Insira sua data de nascimento" required >
-        
-        <Br></Br>
-        
-        <label for="email">E-mail: </label>
-        <input type="email" name="email" id="email" placeholder="Insira seu E-mail" required >
-        
-        <Br></Br>
-        
+        <div class="grupo">  
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="Idade" placeholder="Insira sua idade" min="0" max="100" required >
+        </div>
+
+        <div class="grupo">        
+            <label for="nascimento">Nascimento: </label>
+            <input type="date" name="nascimento" id="nascimento" placeholder="Insira sua data de nascimento" required >
+        </div>
+
+        <div class="grupo">
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="Insira seu E-mail" required >
+        </div>
+
+        <div class="grupo">
         <label for="curso">Cursos:</label>
         <select name="curso" id="curso">
             <option value="sel" selected disabled>Selecione</option>
@@ -37,34 +42,45 @@
             <option value="amb">Meio-Ambiente</option>
             <option value="adm">Administração</option>
         </select>
+        </div>
 
-        <Br></Br>
+        <div class="grupo">
+        <fieldset>
+            <legend>informe o turno do seu curso: </legend>
+            <label>
+                <input type="radio" name="turno" value="manha" > Manhã
+            </label>
+            <label>
+                <input type="radio" name="turno" value="tarde" > Tarde
+            </label>
+        </fieldset>
+        </div>
 
-        <label>informe o turno do seu curso: </label>
-        <BR></BR>
-        <input type="radio" name="turno" value="manha" > Manhã
-
-        <input type="radio" name="turno" value="tarde" > Tarde
-
-        <BR></BR>
-
-        <label> Como você vem para a escola?</label>
-        <BR></BR>
-        <input type="checkbox" name="publico" value="publico" > Público
-        <input type="checkbox" name="privado" value="privado" > privado
-
-        <BR></BR>
+        <div class="grupo">  
+        <fieldset>
+            <legend> Como você vem para a escola?</legend>       
+            <label>
+                <input type="checkbox" name="publico" value="publico" > Público
+            </label>
+            <label>
+                <input type="checkbox" name="privado" value="privado" > privado
+            </label>
+        </fieldset>
+        </div>
 
         <!--Forma 1-->
        <!-- <Button name="Cadastrar">Cadastrar</Button>
 -->
-        <BR></BR>
-
+        <div class="grupo center">
         <!--Forma 2-->
-        <input type="submit" name="Button" value="limpar resposta" id="botao">
-
+        <input type="submit" name="Button" value="Cadastrar" id="botao">
+        </div>
 
 
     </form>
+
+    <div id="texto"></div>
+
+    </div>
 </body>
 </html>
