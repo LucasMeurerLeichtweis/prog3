@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <form method="post" id="formulario">
+        <fieldset>
+        <h3>PREÇO DO PEDIDO</h3>
+
+        <div class="grupo">
+            
+                <legend>Tamanho da panqueca: </legend>
+                <div class="opcao">
+                    <label>
+                      <input type="radio" name="tamanho" value="P" > P
+                    </label>
+                    <label>
+                        <input type="radio" name="tamanho" value="M" > M
+                    </label>
+                    <label>
+                        <input type="radio" name="tamanho" value="G" > G
+                    </label>
+                </div>
+            
+        </div>
+
+        <div class="grupo">  
+           
+                <legend> Sabor da panqueca:</legend>
+                <div class="opcao">       
+                    <label>
+                        <input type="checkbox" name="queijo" > Queijo
+                    </label>
+                    <label>
+                        <input type="checkbox" name="calabresa" > Calabresa
+                    </label>
+                    <label>
+                        <input type="checkbox" name="morango" > Morango
+                    </label>
+                </div>
+            
+        </div>
+
+        <div class="grupo">
+            <label for="entrega">Entrega ou Busca:</label>
+
+            <div class="opcao"> 
+            <select name="entrega" id="entrega">
+                <option value="sel" selected disabled>Selecione</option>
+                <option value="entr">Entrega</option>
+                <option value="busc">Busca</option>               
+            </select>
+            </div>
+
+        </div>
+
+        <div class="grupo">  
+            <label for="quant">Quantidade: </label>
+            <input type="number" name="quant" id="Quant" min="1" max="100" required >
+        </div>
+
+        <div class="grupo center">            
+            <input type="submit" name="Button" value="Calcular" id="botao">
+        </div>
+        <div id="texto"></div>
+    </fieldset>
+    </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;    
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    margin: 30px;
+}
+select{
+    padding: 5px 45px;
+}
+input[type = "text"], input[type = "number"], input[type = "password"]{
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.grupo{
+    padding: 10px;
+}
+.opcao{
+    text-align: center;
+    padding: 10px;
+}
+/*.Fundo{
+ margin: 20px 20px;
+}
+ */
+.fundo {   
+    width: 100vw;
+    height: 100vh;
+    
+    
+    display: grid;
+    place-items: center;
+}
