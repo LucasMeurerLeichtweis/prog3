@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.titulo{
+    text-align: center;
+    color: aliceblue;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(29, 97, 12);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Em coluna*/
+    flex-direction:column;
+}
+.livro{
+    flex: 1;
+    width: 30vw;
+    height: 40vh;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+  }

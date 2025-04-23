@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f8ff;
+  }
+  
+  .pokemon-card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1rem;
+    background-color: #fff;
+    max-width: 300px;
+  }
+  
+  .pokemon-card img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .types span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+  
